@@ -29,7 +29,7 @@ const Home = () => {
           </div>
        <div className="profile-image-wrapper">
           <div className="circle-bg"></div>
-          <img src='/profile.jpg' alt="Dawit" />
+          <img src='/profile.JPG' alt="Dawit" />
         </div>
 
           
