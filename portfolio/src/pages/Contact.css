@@ -1,0 +1,97 @@
+.contact {
+  background-color: #112240;
+  color: white;
+  padding: 0 40px 80px 40px;
+  text-align: center;
+}
+
+.contact h2 {
+  font-size: 36px;
+  color: #64ffda;
+  margin-bottom: 10px;
+}
+
+.contact p {
+  font-size: 18px;
+  color: #ccd6f6;
+  margin-bottom: 40px;
+}
+
+.contact-form {
+  max-width: 600px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  background-color: #0a192f;
+  color: white;
+  outline: none;
+  border: 1px solid #64ffda;
+}
+
+.contact-form input::placeholder,
+.contact-form textarea::placeholder {
+  color: #94a3b8;
+}
+
+.contact-form .btn {
+  padding: 12px;
+  background-color: #64ffda;
+  color: #0a192f;
+  font-weight: bold;
+  font-size: 16px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.contact-form .btn:hover {
+  transform: scale(1.05);
+}
+.toast-message {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: #64ffda;  /* greenish success color */
+  color: #0a0a0a;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: 600;
+  box-shadow: 0 8px 16px rgba(100, 255, 218, 0.3);
+  z-index: 1000;
+  animation: slideInRight 0.4s ease forwards;
+}
+
+/* Optional: fade out after 4 seconds */
+.toast-message {
+  animation: slideInRight 0.4s ease forwards, fadeOut 0.5s ease 3.5s forwards;
+}
+
+/* Slide in from right */
+@keyframes slideInRight {
+  from {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+/* Fade out */
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateX(30px);
+  }
+}
