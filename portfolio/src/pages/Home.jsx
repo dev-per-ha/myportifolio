@@ -13,7 +13,7 @@ const Home = () => {
             <h1>Hi, I'm <span>Dawit</span></h1>
             <h2>Full Stack Web Developer</h2>
             <p>I build responsive, clean, and interactive websites using modern web technologies.</p>
-            <a href="/my_Resume.pdf" download className="btn">Download Resume</a>
+            <a href="/Final_resume.pdf" download className="btn">Download Resume</a>
             <div className="contact-icons">
             <a href=" https://github.com/dev-per-ha" target="_blank" rel="noopener noreferrer">
               <FaGithub />
